@@ -1,0 +1,88 @@
+window['adrum-start-time'] = new Date().getTime();
+(function(config){
+    config.appKey = 'AD-AAB-AAD-EKV';
+    config.adrumExtUrlHttp = 'http://cdn.appdynamics.com';
+    config.adrumExtUrlHttps = 'https://cdn.appdynamics.com';
+    config.beaconUrlHttp = 'http://col.eum-appdynamics.com';
+    config.beaconUrlHttps = 'https://col.eum-appdynamics.com';
+    config.xd = {enable : false};
+
+    (function(info) {
+        (function(page) {
+            page.userData = AppDGetData();
+            page.userDataBoolean = IsSitecore();
+        })(info.PageView || (info.PageView = {}));
+        (function(ajax) {
+            ajax.userData = AppDGetData();
+            ajax.userDataBoolean = IsSitecore();
+        })(info.Ajax || (info.Ajax = {}));
+        (function(vpageview) {
+            vpageview.userData = AppDGetData();
+            vpageview.userDataBoolean = IsSitecore();
+        })(info.VPageView || (info.VPageView = {}));
+
+    })(config.userEventInfo || (config.userEventInfo = {}))
+})(window['adrum-config'] || (window['adrum-config'] = {}));
+
+
+function AppDGetData() {
+    var userData = new Object();
+    
+    if (window.utag_data) {
+        if(window.utag_data["cp.optlyAdobeData"]){userData.udata_test_ver = window.utag.data["cp.optlyAdobeData"];}
+        if(window.utag_data["server"]){
+            userData.serverName = window.utag_data["server"];
+        }
+    }
+
+    return userData;
+}
+
+function IsSitecore(){
+    var userDataBoolean = new Object();
+    userDataBoolean.isSitecore = false;
+    if (window.utag_data) {
+        if(utag_data['server']){
+            var serverName = utag_data['server'].toString();
+            if(serverName.substring(0,2)=="RD")
+            {
+                userDataBoolean.isSitecore = true;
+            };
+        }
+    }
+    return userDataBoolean;
+}
+
+
+function getCartData(){   
+    var userData = new Object();
+    
+    if(as.Page.Cart){
+        userData.FareType = as.Page.Cart.Itinerary.FareType ? as.Page.Cart.Itinerary.FareType : "";
+        userData.ItinType = as.Page.Cart.Itinerary.Type ? as.Page.Cart.Itinerary.Type : "";
+    }
+    return userData;
+}
+
+function getCartValues(){
+    var userDataDouble = new Object();    
+
+    if(as.Page.Cart){
+        userDataDouble.Revenue = as.Page.Cart.Itinerary.Revenue ? as.Page.Cart.Itinerary.Revenue : 0;
+        userDataDouble.Miles = as.Page.Cart.Itinerary.Miles ? parseFloat(as.Page.Cart.Itinerary.Miles) : 0;
+        userDataDouble.TotalFare = as.Page.Cart.Itinerary.TotalFare ? parseFloat(as.Page.Cart.Itinerary.TotalFare) : 0;
+    }
+    return userDataDouble;
+}
+
+function getSectionDisplayedHeading() {
+
+    var userData = new Object();
+
+    if (document.getElementById("sectionDisplayedHeading")!=null)
+        userData.SectionDisplayID = document.getElementById("sectionDisplayedHeading").innerText;
+
+    return userData;
+}
+
+
