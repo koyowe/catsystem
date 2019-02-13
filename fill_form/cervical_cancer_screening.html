@@ -57,6 +57,17 @@
 				color: #01426A;
 				margin-top: 35px;
 			}
+			
+			.mobile-none {
+				display: none !important;
+			}
+		}
+		
+		@media (min-width: 767px) {
+			
+			.mobile-block {
+				display: none !important;
+			}
 		}
 		.EzPopopOuter {
 			overflow: visible !important; /* IE8 browser dialog close button gets clipped otherwise */
@@ -355,8 +366,9 @@
 
 <div class="sc-modules generic-text-rendering _fac5a744-393d-4b85-8cfc-192fc054c493">
 <div class=" generic-content">
-<table width="100%" >
-	<tr>
+<div style="border:0px solid green">
+<table class="mobile-none" style="width:100%;" >
+	<tr >
 		<td style="width:10%">
 			<img src="../resources/images/pages/cc-icon-trans.png" width="100px">
 		</td>
@@ -390,6 +402,22 @@
 	</tr>
 </table>
 
+<table class="mobile-block" width="100%">
+	<tr>
+		<td style="text-align:center; width:767px;">
+			<img src="../resources/images/pages/cc-icon-trans.png" width="100px">
+		</td>
+	</tr>
+	<tr style="background-color:grey">
+		
+		<td style="text-align:center; width:767px">
+			<h4 style="color:white">Cervical Cancer Screening Form</h4>
+		</td>
+		
+	</tr>
+	
+</table>
+</div>
 <div class="table-responsive">
 <table summary="Coming Soon" id="comingsoon" width="100%">
     <tbody>
@@ -409,13 +437,13 @@
                             <div class="birthDateFields" style="float:left; padding-right:5px">
 								<div style="text-align:center; color:grey">26</div>
 								<div style="height:1px"></div>
-                                 _____________________<br/>
+                                 _______<br/>
                                 <label for="BirthDay" id="birthDayInputLabel" style="text">Age</label>
                             </div>
                             <div class="birthDateFields" style="float:left; padding-right:5px">
 								<div style="text-align:center; color:grey">0722448855</div>
 								<div style="height:1px"></div>
-                                 _____________________<br/>
+                                 ________________<br/>
                                 <label for="BirthYear" id="birthYearInputLabel">Phone No.</label>
                             </div>
 							
@@ -666,7 +694,7 @@
             </td>
         </tr>
 		
-		 <tr style="border-top: 1px solid #ddd;
+		 <tr class="mobile-none" style="border-top: 1px solid #ddd;
 			border-bottom: 1px solid #ddd;">
             <th id="ourtimelineRowHdr3" class="col4" rowspan="">Cervical Map</th>
             <td headers="ourtimelineColHdr2 ourtimelineRowHdr3" class="col5">
