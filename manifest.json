@@ -1,0 +1,22 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "CATSystem - Cancer Tracking System",
+    "scope": "/catsystem/",
+    "display": "standalone",
+    "start_url": "https://koyowe.github.io/catsystem/",
+    "short_name": "CATSystem",
+    "theme_color": "#01426a",
+    "description": "Official webapp for CATSystem - Cancer Tracking System. A product of University of Kansas Medical Center in collaboration with University of Nairobi",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "/images/catsystem/resources/images/pages/cc-icon_2.png",
+            "type": "image/jpeg",
+            "sizes": "820x928"
+        }
+    ]
+}
