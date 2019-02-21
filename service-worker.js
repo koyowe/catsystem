@@ -15,6 +15,7 @@
   toolbox.precache([ './',
 					 './index.html',
 					 './home/index.html',
+					 './fill_form/',
 					 './fill_form/index.html',
 					 './fill_form/cervical_cancer_screening.html']);
 
