@@ -128,7 +128,4 @@ this.addEventListener('fetch', event => {
   }
 });
 
-//test123
-
-
 
