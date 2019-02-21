@@ -14,15 +14,9 @@
   // We want to precache the following items
   toolbox.precache([ './',
 					 './index.html',
-                     './about.html',
-                     './style.html',
-                     './settings.html',
-					 './home',
 					 './home/index.html',
-					  './fill_form',
 					 './fill_form/index.html',
-					 './fill_form/cervical_cancer_screening.html',
-                     './beer.html']);
+					 './fill_form/cervical_cancer_screening.html']);
 
   // The route for any requests from the googleapis origin
   toolbox.router.get('/(.*)', global.toolbox.cacheFirst, {
