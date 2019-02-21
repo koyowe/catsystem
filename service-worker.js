@@ -35,38 +35,38 @@
     networkTimeoutSeconds: 4
   });
 
-  toolbox.router.get('/catbeer/css/(.*)', global.toolbox.cacheFirst, {
+  toolbox.router.get('/catsystem/css/(.*)', global.toolbox.cacheFirst, {
     cache: {
-      name: 'beer-stylesheets'
+      name: 'catsystem-stylesheets'
     },
     networkTimeoutSeconds: 4
   });
 
-  toolbox.router.get('/catbeer/images/(.*)', global.toolbox.cacheFirst, {
+  toolbox.router.get('/catsystem/images/(.*)', global.toolbox.cacheFirst, {
     cache: {
-      name: 'beer-images'
+      name: 'catsystem-images'
     },
     networkTimeoutSeconds: 4
   });
 
-  toolbox.router.get('/catbeer/js/(.*)', global.toolbox.cacheFirst, {
+  toolbox.router.get('/catsystem/js/(.*)', global.toolbox.cacheFirst, {
     cache: {
-      name: 'beer-javascript'
+      name: 'catsystem-javascript'
     },
     networkTimeoutSeconds: 4
   });
 
   toolbox.router.get('/(.*)', global.toolbox.cacheFirst, {
     cache: {
-      name: 'beer-images-amazon'
+      name: 'catsystem-images-amazon'
     },
     origin: /\.amazonaws\.com$/,
     networkTimeoutSeconds: 4
   });
 
-  toolbox.router.get('/catbeer/data/(.*)', global.toolbox.cacheFirst, {
+  toolbox.router.get('/catsystem/data/(.*)', global.toolbox.cacheFirst, {
     cache: {
-      name: 'beer-data'
+      name: 'catsystem-data'
     },
     networkTimeoutSeconds: 4
   });
