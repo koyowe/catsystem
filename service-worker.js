@@ -18,10 +18,8 @@
                      './style.html',
                      './settings.html',
 					 './home',
-					 './home/',
 					 './home/index.html',
 					  './fill_form',
-					 './fill_form/',
 					 './fill_form/index.html',
 					 './fill_form/cervical_cancer_screening.html',
                      './beer.html']);
