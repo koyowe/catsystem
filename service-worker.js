@@ -71,6 +71,20 @@
     },
     networkTimeoutSeconds: 4
   });
+  
+  toolbox.router.get('/catsystem/fill_form/(.*)', global.toolbox.cacheFirst, {
+    cache: {
+      name: 'catsystem-forms'
+    },
+    networkTimeoutSeconds: 4
+  });
+  
+  toolbox.router.get('/catsystem/home/(.*)', global.toolbox.cacheFirst, {
+    cache: {
+      name: 'catsystem-home'
+    },
+    networkTimeoutSeconds: 4
+  });
 
   // Ensure that our service worker takes control of the page as soon as possible.
   global.addEventListener('install', event => event.waitUntil(global.skipWaiting()));
