@@ -86,7 +86,7 @@
     networkTimeoutSeconds: 4
   });
   
-  toolbox.router.get('/catsystem/index.html', global.toolbox.cacheFirst, {
+  toolbox.router.get('/catsystem/', global.toolbox.cacheFirst, {
     cache: {
       name: 'catsystem-land'
     },
