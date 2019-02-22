@@ -14,6 +14,7 @@
   // We want to precache the following items
   toolbox.precache([ './',
 					 './index.html',
+					 './home/',
 					 './home/index.html',
 					 './fill_form/',
 					 './fill_form/index.html',
