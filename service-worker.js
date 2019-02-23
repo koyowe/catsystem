@@ -85,6 +85,13 @@
     },
     networkTimeoutSeconds: 4
   });
+  
+  toolbox.router.get('/catsystem/index.html', global.toolbox.cacheFirst, {
+    cache: {
+      name: 'catsystem-land'
+    },
+    networkTimeoutSeconds: 4
+  });
 
   // Ensure that our service worker takes control of the page as soon as possible.
   global.addEventListener('install', event => event.waitUntil(global.skipWaiting()));
