@@ -57,13 +57,8 @@
 	<script type="text/javascript" src="js/jquery.min.js.download"></script>
 	<script type="text/javascript" src="js/jquery-ui.min.js.download"></script>
 	
-	<script src="js/numscroller-1.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js" charset="utf-8"></script>
-	<script src="js/nvd3/build/nv.d3.js"></script>
-	
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/core.css">
-	<link href="js/nvd3/build/nv.d3.css" rel="stylesheet" type="text/css">
 	
 	<style id="holderjs-style" type="text/css"></style>
 	<style type="text/css">
@@ -128,6 +123,25 @@
 			$('#loading-image').show();
 		  });
 		});
+		
+		$(document).ready(function() {
+		
+			var signalStrength = navigator.connection.effectiveType;
+			console.log("signal strength = " + signalStrength);
+			
+			if ((signalStrength == '4g') || (signalStrength == '3g')){
+			  $("#bodyDiv").css("background-image", "url('images/pages/cancer_facility.jpg')");
+			  
+			  $("#loginDiv").css("background-image", "url('images/pages/counselling.jpg')");
+			  
+			}else{
+				
+				$("#messageSpan").html('Slow network detected.');
+			}
+		  
+        });
+		
+		
 	</script>
 	
   </head>
@@ -273,7 +287,7 @@
         
         <div class="container-hero"  >
 
-			<div class="jumbotron desktop-hero sc-module homepage-heroimage _8d16763c-dbf5-4d24-8a94-3abf4cce76ae"  style=" background-color:pink; height:450px;background-image:url(images/pages/cancer_facility.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+			<div id="bodyDiv" class="jumbotron desktop-hero sc-module homepage-heroimage _8d16763c-dbf5-4d24-8a94-3abf4cce76ae"  style=" background-color:white; height:450px; background-repeat: no-repeat; background-size: cover; background-position: center;">
 				<div class="homepage-heroimage-container">
 					<div class="homepage-heroimage--desktop homepage-heroimage--tablet"></div>
 				</div>
@@ -284,7 +298,7 @@
 							<br/><br/>
 							<div id="homelet">
 								<link rel="stylesheet" type="text/css" href="css/homelet.css">
-			<div class="homelet" id="formletTabPanel" style="background-image:url(images/pages/counselling.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+			<div id="loginDiv" class="homelet" id="formletTabPanel" style="background-repeat: no-repeat; background-size: cover; background-position: center;">
 				<!-- The Homelet -->
 				<!-- Nav tabs -->
 				<ul id="primaryTab" class="nav nav-tabs nav-justified" role="tablist" >
@@ -302,7 +316,7 @@
 								
 								<div style="border:0px solid purple; text-align:center; padding:5px; border-radius:5px">
 									
-									<br/>
+									<span id="messageSpan" style="color:orange; font-size:11px"></span>
 									
 								</div>
 								<br/>
