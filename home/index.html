@@ -245,8 +245,9 @@
 			background-image:-o-linear-gradient(top, #3EACBA, #48C6D4);
 			background-image:linear-gradient(top, #3EACBA, #48C6D4);
 		}
+	</style>
 		
-		<style>
+	<style>
 		@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 
 		/* General Buttons */
@@ -329,6 +330,57 @@
 		  display: none;
 		}
 	</style>
+		
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+		body{
+		  //background: #f2f2f2;
+		  //font-family: 'Open Sans', sans-serif;
+		}
+
+		.search {
+		  width: 100%;
+		  position: relative
+		}
+
+		.searchTerm {
+		  float: left;
+		  width: 100%;
+		  border: 3px solid #00B4CC;
+		  padding: 5px;
+		  height: 40px;
+		  border-radius: 5px;
+		  outline: none;
+		  color: #9DBFAF;
+		}
+
+		.searchTerm:focus{
+		  color: #00B4CC;
+		}
+
+		.searchButton {
+		  position: absolute;  
+		  right: -40px;
+		  width: 40px;
+		  height: 40px;
+		  border: 1px solid #00B4CC;
+		  background: #00B4CC;
+		  text-align: center;
+		  color: #fff;
+		  border-radius: 5px;
+		  cursor: pointer;
+		  font-size: 20px;
+		}
+
+		/*Resize the wrap to see the search bar change!*/
+		.wrap{
+		  width: 80%;
+		  position: absolute;
+		  //top: 50%;
+		  left: 48%;
+		  transform: translate(-50%, -50%);
+		}
 	</style>
 	
   </head>
@@ -519,6 +571,16 @@
 				<br/>
 				<span style="font-size:24px;">Patience Ozokwor Mama G</span>
 			</div>
+			<br/>
+			 <div class="wrap">
+			   <div class="search">
+				  <input type="text" class="searchTerm" placeholder="Search for a patient">
+				  <button type="submit" class="searchButton">
+					<i class="fa fa-search"></i>
+				 </button>
+			   </div>
+			</div>
+			<br/>
 		
 			<a class="push_button red" href="../fill_form/index.html">Patient Registration</a> 
 			
@@ -832,41 +894,48 @@
 					<span style="font-size:24px;color:white">|||</span>
 				</div>
                 <div class="hero-offer white hidden-xs">
-                    <a href="" tabindex="-1" class="viewOffersURL">
-                        <div class="hero-offer--headlines" style="color:black">Welcome, Kevin. 
+                  
+					<div class="view-offer" >
+						  <div class="wrap">
+						   <div class="search">
+							  <input type="text" class="searchTerm" placeholder="Search for a patient">
+							  <button type="submit" class="searchButton">
+								<i class="fa fa-search"></i>
+							 </button>
+						   </div>
 						</div>
-						<span style="font-size:11px; color:black">What would you like to do?</span>
-                    </a>
+                    </div>
+				   <br/><br/>
                     <div class="view-offer" >
-                        <div class="hero-offer--buttons">
-                                <button type="" class="btn btn-primary btn-block" id="joinNowButton" data-disable-text="Processing..." style="border-radius:5px"><a href="../fill_form/index.html" style="text-decoration:none;color:white">Patient Registration</a></button>
+						 <div class="hero-offer--buttons">
+                               <button type="" class="btn btn-primary btn-block" id="joinNowButton" data-disable-text="Processing..." style="border-radius:5px"><a href="../fill_form/index.html" style="text-decoration:none;color:white; text-shadow: 1px 1px 5px rgba(12,0,0,.4);">Patient Registration</a></button>
                         </div>
                     </div>
 					<br/>
 					 <div class="view-offer">
                         <div class="hero-offer--buttons">
-                               <button type="" class="btn btn-primary btn-block" id="joinNowButton" data-disable-text="Processing..." style="border-radius:5px"><a href="../fill_form/cervical_cancer_screening.html" style="text-decoration:none;color:white">Cervical Cancer Screening</a></button>
+                               <button type="" class="btn btn-primary btn-block" id="joinNowButton" data-disable-text="Processing..." style="border-radius:5px"><a href="../fill_form/cervical_cancer_screening.html" style="text-decoration:none;color:white; text-shadow: 1px 1px 5px rgba(12,0,0,.4);">Cervical Cancer Screening</a></button>
                         </div>
                     </div>
 					
 					<br/>
 					 <div class="view-offer" >
                         <div class="hero-offer--buttons">
-                               <button type="" class="btn btn-primary btn-block" id="joinNowButton" data-disable-text="Processing..." style="border-radius:5px"><a href="#" style="text-decoration:none;color:white">Pre-Cancer Treatment</a></button>
+                               <button type="" class="btn btn-primary btn-block" id="joinNowButton" data-disable-text="Processing..." style="border-radius:5px"><a href="#" style="text-decoration:none;color:white; text-shadow: 1px 1px 5px rgba(12,0,0,.4);">Pre-Cancer Treatment</a></button>
                         </div>
                     </div>
 					
 					<br/>
 					 <div class="view-offer">
                         <div class="hero-offer--buttons">
-                              <button type="" class="btn btn-primary btn-block" id="joinNowButton" data-disable-text="Processing..." style="border-radius:5px"><a href="#" style="text-decoration:none;color:white">Invasive Cancer Treatment</a></button>
+                              <button type="" class="btn btn-primary btn-block" id="joinNowButton" data-disable-text="Processing..." style="border-radius:5px"><a href="#" style="text-decoration:none;color:white; text-shadow: 1px 1px 5px rgba(12,0,0,.4);">Invasive Cancer Treatment</a></button>
                         </div>
                     </div>
 					
 					<br/>
 					 <div class="view-offer">
                         <div class="hero-offer--buttons">
-                               <button type="" class="btn btn-primary btn-block" id="joinNowButton" data-disable-text="Processing..." style="border-radius:5px"><a href="#" style="text-decoration:none;color:white">Patient Tracking</a></button>
+                               <button type="" class="btn btn-primary btn-block" id="joinNowButton" data-disable-text="Processing..." style="border-radius:5px"><a href="#" style="text-decoration:none;color:white; text-shadow: 1px 1px 5px rgba(12,0,0,.4);">Patient Tracking</a></button>
                         </div>
                     </div>
 					<br/>
