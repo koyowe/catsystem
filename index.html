@@ -130,9 +130,15 @@
 			console.log("signal strength = " + signalStrength);
 			
 			if ((signalStrength == '4g') || (signalStrength == '3g')){
-			  $("#bodyDiv").css("background-image", "url('images/pages/cancer_facility.jpg')");
+			
+				if($(window).width() > 767){
+					
+					$("#bodyDiv").css("background-image", "url('images/pages/cancer_facility.jpg')");
 			  
-			  $("#loginDiv").css("background-image", "url('images/pages/counselling.jpg')");
+					$("#loginDiv").css("background-image", "url('images/pages/counselling.jpg')");
+				}else{
+					$("#messageSpan").html('Mobile device.');
+				}
 			  
 			}else{
 				
