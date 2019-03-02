@@ -81,17 +81,26 @@
 			font-size: 22px;
 			margin: 20px 0 10px;
 		}
+		
 		@media (max-width: 767px) {
 			#content .welcome {
 				color: #01426A;
 				margin-top: 35px;
 			}
+			
 		}
 		
 		@media (min-width: 767px) {
 			
 			.mobile-block {
 				display: none !important;
+			}
+		}
+		
+		@media (max-width: 767px) {
+			
+			.desktop-block {
+				display: none;
 			}
 		}
 		
@@ -505,6 +514,11 @@
         <div class="container-hero" style="">
 		
 		<div class="mobile-block" style="width:100%; text-align:right">
+			<div style="text-align:center; text-shadow: 1px 1px 5px rgba(12,0,0,.4);">
+				<span style="font-size:22px; background-color:#2774ae; color:white; border-radius:5px; padding:2px; padding-right:5px;padding-left:5px">Patient</span>
+				<br/>
+				<span style="font-size:24px;">Patience Ozokwor Mama G</span>
+			</div>
 		
 			<a class="push_button red" href="../fill_form/index.html">Patient Registration</a> 
 			
@@ -530,7 +544,7 @@
     </div>
     <div class="geo-city white visible-lg visible-md js-hide"></div>
     <div class="container">
-        <div class="row">
+        <div class="row" style="height: 100vh">
             <div class="col-sm-7 col-md-6">
                 <h2 class="homepage-heroimage--welcome">Welcome, Kevin</h2>
                 <div id="homelet">
@@ -812,6 +826,11 @@
             </div>
             <!-- end column-->
             <div class="col-sm-5 col-md-6">
+				<div class="desktop-block" style="text-align:right; text-shadow: 1px 1px 5px rgba(12,0,0,.4);">
+					<span style="font-size:22px; background-color:#2774ae; color:white; border-radius:5px; padding:2px; padding-right:5px;padding-left:5px">Patient</span>
+					<span style="font-size:24px;">Patience Ozokwor Mama G</span>
+					<span style="font-size:24px;color:white">|||</span>
+				</div>
                 <div class="hero-offer white hidden-xs">
                     <a href="" tabindex="-1" class="viewOffersURL">
                         <div class="hero-offer--headlines" style="color:black">Welcome, Kevin. 
