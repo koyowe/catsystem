@@ -129,6 +129,9 @@
 			var signalStrength = navigator.connection.effectiveType;
 			console.log("signal strength = " + signalStrength);
 			
+			var systemIsOnline = navigator.onLine;
+			console.log("System is online = "+ systemIsOnline);
+			
 			if ((signalStrength == '4g') || (signalStrength == '3g')){
 			
 				if($(window).width() > 767){
@@ -143,6 +146,11 @@
 			}else{
 				
 				$("#messageSpan").html('Slow network detected.');
+			}
+			
+			if(!systemIsOnline){
+			
+				$("#messageSpan").html('You are offline.');
 			}
 		  
         });
@@ -322,7 +330,7 @@
 								
 								<div style="border:0px solid purple; text-align:center; padding:5px; border-radius:5px">
 									
-									<span id="messageSpan" style="color:orange; font-size:11px"></span>
+									<span id="messageSpan" style="background-color:cyan; color:orange; font-size:11px;padding:2px"></span>
 									
 								</div>
 								<br/>
