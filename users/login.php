@@ -10,7 +10,7 @@
 						<br/><br/>
 						<div id="homelet">
 							<link rel="stylesheet" type="text/css" href="css/homelet.css">
-							<div id="loginDiv" class="homelet" id="formletTabPanel" style="background-repeat: no-repeat; background-size: cover; background-position: center; background-color:pink;border-radius:5px">
+							<div id="loginDiv" class="homelet" style="background-repeat: no-repeat; background-size: cover; background-position: center; background-color:pink;border-radius:5px; width:100%">
 		
 								<ul id="primaryTab" class="nav nav-tabs nav-justified" role="tablist" >
 									<li class="selected active" role="presentation">
@@ -38,7 +38,7 @@
 												</div>
 												
 												<br/>
-												<a title="Test Login as Kevin Oyowe" href="home/index.html" style="text-decoration:none">
+												<a title="Test Login as Kevin Oyowe" href="../app" style="text-decoration:none">
 												<div style="border:1px solid white; text-align:center; padding:5px; border-radius:5px; background-color:green">
 													<span  style="color:white; font-size:20px; font-weight:bold">
 														Login
@@ -56,13 +56,13 @@
 								</div>
 							</div>
 						
-							<script src="js/homelet.scripts.min.js.download" type="text/javascript"></script>
+							<script src="../js/homelet.scripts.min.js.download" type="text/javascript"></script>
 							
 						</div>
 					</div>
 					<div id="aboutDiv" class="col-sm-12 col-md-6" style="clear:both">
 						<div id="desktopBreak" style="height:350px"></div>
-						<div class="desktop-block" style="text-align:right; text-shadow: 1px 1px 5px rgba(12,0,0,.4);">
+						<div class="desktop-block" style="text-align:right; text-shadow: 1px 1px 5px rgba(12,0,0,.4);width:106%">
 							<ul id="primaryTab" class="nav nav-tabs nav-justified" role="tablist" >
 								<li class="selected active" role="presentation">
 									<a id="tab-booking" href="" role="tab" aria-controls="booking" aria-selected="true" style="background-color:black;color:pink; text-align:left; border:0px">About</a>
@@ -71,10 +71,10 @@
 									<div class="tab-pane booking-forms flight-search active" id="booking" aria-hidden="false" style="display: block;">
 										<div class="secondaryTabpanelContainer">
 											<div class="tab-content">
-												<div style="border:0px solid white; text-align:left; padding:5px; border-radius:0px; background-color:green; color:pink">
+												<div style="border:0px solid white; text-align:left; padding:5px; border-radius:0px; background-color:green; color:white">
 													<div>CATSystem Project is a research collaboration between the University of Kansas Medical Center, Global Health Innovations Fund, and Kenya Medical Research Institute.</div>
 												</div>
-												<div style="text-align:left;">
+												<!--<div style="text-align:left;">
 													<table width="100%">
 														<tr>
 															<td style="width:33%; text-align:center">
@@ -90,7 +90,7 @@
 															</td>
 														</tr>
 													</table>
-												</div>
+												</div>-->
 											</div>
 										</div>
 									</div>
@@ -101,7 +101,7 @@
 					<div id="loginMobile" class="col-sm-5 col-md-6">
 						<div class="desktop-block" style="text-align:right; text-shadow: 1px 1px 5px rgba(12,0,0,.4);">
 							<br/>
-							<img src="images/pages/localhost_catsystem_iPhone 6_7_8.png" style="width:50%; border-radius:40px;">
+							<img src="images/pages/localhost_catsystem_iPhone_7_8.png" style="width:%; border-radius:40px;">
 							<div style="height:100px"></div>
 						</div>
 						

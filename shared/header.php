@@ -4,7 +4,7 @@
 	
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href='https://fonts.googleapis.com/css?family=Gabriela|Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="./css/result-j6dk4j47.min.css">    
+    <link rel="stylesheet" href="css/result-j6dk4j47.min.css">    
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -19,7 +19,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="msapplication-starturl" content="/index.php">
 	
-	<title>CATSystem - Cancer Tracking System</title>
+	<title>Welcome to CATSystem - Login</title>
 	
 	<meta name="description" content="CATSystem Project - Cancer Tracking System, University of Kansas Medical Center">
 	<meta name="author" content="Kevin Oyowe, Health Informatics - CATSystem Programmer">
@@ -49,14 +49,15 @@
     <link rel="icon" type="image/png" sizes="96x96" density="1" href="./images/beer-icon-96.png">
     <link rel="apple-touch-icon" type="image/png" sizes="96x96" density="1" href="./images/beer-icon-96.png">
 	
-	<script type="text/javascript" src="js/adrum.js.download"></script>
+	<script type="text/javascript" src="../js/adrum.js.download"></script>
 	
-	<script type="text/javascript" src="js/handlebars-v4.0.2.js.download"></script>
-	<script type="text/javascript" src="js/jquery.min.js.download"></script>
-	<script type="text/javascript" src="js/jquery-ui.min.js.download"></script>
+	<script type="text/javascript" src="../js/handlebars-v4.0.2.js.download"></script>
+	<script type="text/javascript" src="../js/jquery.min.js.download"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js.download"></script>
 	
-	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/core.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/core.css">
+	<link rel="stylesheet" href="../css/sitecore.css">
 	
 	<style id="holderjs-style" type="text/css"></style>
 	<style type="text/css">
@@ -151,7 +152,7 @@
 				$("#desktopBreak").css("display", "block");
 			}
 			
-			if($(window).height() < 700){
+			if($(window).height() < 699){
 				$("#aboutDiv").css("display", "none");
 			}
 			

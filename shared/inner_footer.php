@@ -1,4 +1,4 @@
-	<div id="footerServerName" class="server-name fine-print text-center footer-servername" style="background-color:rgba(221, 229, 237, 0.87);">
+	<div id="footerServerName" class="server-name fine-print text-center footer-servername" style="background-color:rgba(221, 229, 237, 0.87);text-align:center">
 		
 		<div style="background-color:white; height:2px"></div>
 		<div style="background-color:black; height:6px"></div>

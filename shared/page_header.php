@@ -25,7 +25,7 @@
 	<div id="headerNewStyle" class="" style="background-color:green">
 	<div id="hf-nav-mobile" class="hf-nav-mobile menu-mobile">
 	<div id="hf-aura-mobile" class="hf-aura no-print" no-print-web-checkin="" aria-label="Go to Alaska Airlines Home" style="color:white; background-color:green">
-		<h2 class="homepage-heroimage--welcome" style="background-color:black; border-bottom:2px solid white">CATSystem - Mobile</h2>
+		<h2 class="homepage-heroimage--welcome" style="background-color:black; border-bottom:2px solid white">CATSystem Mobile</h2>
 	</div>
 	<a href="" aria-label="Go to CATSystem Home">
 		 
@@ -49,51 +49,25 @@
 		<div id="hf-nav" class="hf-nav-test pure-menu pure-menu-horizontal">
 			
 		<ul class="pure-menu-list nav-ul" role="menu">
-		
-		<li class="pure-menu-item pure-menu-selected" role="presentation">
-		<a id="navAlaskaAirHome" href="" class="pure-menu-link no-hover-underline" aria-label="Go to CATSystem Home"><span class="svg-fallback alaska-logo-fallback">Alaska</span>
 			
-			 <table align="center">
-				<tr>
-					<td>
-						
-					</td>
-				</tr>
-			</table>
+				<li class="pure-menu-item pure-menu-selected" role="presentation">
+				<a id="navAlaskaAirHome" href="" class="pure-menu-link no-hover-underline" aria-label="Go to CATSystem Home"><span class="svg-fallback alaska-logo-fallback">Alaska</span>
+					
+					 <table align="center">
+						<tr>
+							<td>
+								<span style="font-family:Bungee Inline; font-size:28px"> CAT</span>
+								<span style="font-family:Calibri Light (Headings); font-size:28px">System </span>
+								<span>- Cancer Tracking System</span>
+							</td>
+						</tr>
+					</table>
+					
+					
+				</a>
+				</li>
 			
-			
-		</a>
-		</li>
-		
-		<li class="pure-menu-item pure-menu-selected" role="presentation">
-		<a id="navAlaskaAirHome" href="" class="pure-menu-link no-hover-underline" aria-label="Go to CATSystem Home"><span class="svg-fallback alaska-logo-fallback">Alaska</span>
-			
-			 <table align="center">
-				<tr>
-					<td>
-						<span style="font-family:Bungee Inline; font-size:28px"> CAT</span>
-						<span style="font-family:Calibri Light (Headings); font-size:28px">System </span>
-						<span>- Cancer Tracking System</span>
-					</td>
-				</tr>
-			</table>
-			
-			
-		</a>
-		</li>
-		
-		<li class="pure-menu-item pure-menu-selected" role="presentation">
-		
-			 <table align="center">
-				<tr>
-					<td>
-						<button class="add-button">Install as App</button>
-					</td>
-				</tr>
-			</table>
-		</li>
-		
-		</ul></div></div></div>
+			</ul></div></div></div>
 	
 	<div style="background-color:white; height:2px"></div>
 	<div style="background-color:black; height:6px"></div>
@@ -101,13 +75,3 @@
 	<div style="background-color:#BB0000; height:6px"></div>
 	
 	
-								
-	<div class="show-only-in-travelagent">
-	
-	<div id="ta-hf-nav-mobile" class="hf-nav-mobile">
-	
-
-	
-	
-	
-	<div id="ta-nav-mobile-menu" class="pure-menu hidden nav-mobile-menu"></div></div><div id="ta-hf-top" class="pure-menu pure-menu-horizontal"></div></div>
