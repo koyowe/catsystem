@@ -13,7 +13,9 @@
 		v45.817c5.759-2.42,11.471-4.763,16.922-7.156C25.955,62.573,35.048,58.741,44.197,55.046z"></path>
 		
 		<path fill="#BB0000" d="M85.466,0H0v27.878c14.547-6.606,29.551-12.221,44.779-16.889C58.186,6.879,71.841,3.47,85.466,0z"></path>
-	</svg><img src="https://koyowe.github.io/catsystem/images/pages/moh_kenya.png" width="100px">
+	</svg>
+	
+	<img src="https://koyowe.github.io/catsystem/images/pages/moh_kenya.png" width="100px" style="margin-left:100px">
 						
 	</div>
 	</div>
@@ -51,7 +53,7 @@
 		<ul class="pure-menu-list nav-ul" role="menu">
 			
 				<li class="pure-menu-item pure-menu-selected" role="presentation">
-				<a id="navAlaskaAirHome" href="" class="pure-menu-link no-hover-underline" aria-label="Go to CATSystem Home"><span class="svg-fallback alaska-logo-fallback">Alaska</span>
+				<a id="navAlaskaAirHome" href="" class="pure-menu-link no-hover-underline" aria-label="Go to CATSystem Home" style="border-bottom:0px">
 					
 					 <table align="center">
 						<tr>

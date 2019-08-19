@@ -31,7 +31,7 @@
 					</div>
 					<div class="geo-city white visible-lg visible-md js-hide"></div>
 					<div class="container" style="width:90%">
-						<div class="row" style="height: 100vh">
+						<div class="row" style="min-height:100vh">
 						
 							<div id="homeDashboard" class="col-sm-7 col-md-6" style="width:30%">
 								<h2 class="homepage-heroimage--welcome">Welcome, Kevin</h2>
@@ -46,7 +46,7 @@
 								</div>
 							</div>
 							
-							<div id="homeDesktop" class="col-sm-5 col-md-6" style="width:70%">
+							<div id="homeDesktop" class="col-sm-5 col-md-6" style="width:70%;">
 								<?php
 									include "home_desktop.php";
 								?>

@@ -3,8 +3,6 @@
 	<ul id="primaryTab" class="nav nav-tabs nav-justified" role="tablist" >
 		<li class="selected active" role="presentation"><a id="tab-booking" href="" role="tab" aria-controls="booking" aria-selected="true">Chart</a></li>
 		<li role="presentation"><a href="" id="tab-check-in" role="tab" aria-controls="checkin" tabindex="-1" aria-selected="false" onclick="/*window.scrollTo(0, 50); setTimeout(function(){window.scrollTo(0, 1000);}, 500)*/"><span >Summary</span></a></li>
-		<li role="presentation"><a href="" id="tab-status" role="tab" aria-controls="status" tabindex="-1" aria-selected="false">Alerts<sup style="background-color:purple;color:white;padding:2px;border-radius:50%">4</sup></a></li>
-		<li role="presentation"><a href="" id="tab-manage" role="tab" aria-controls="manage" tabindex="-1" aria-selected="false">Reports</a></li>
 	</ul>
 	<!-- Tab panes -->
 	<div class="tab-content" style="width:100%">
@@ -150,92 +148,7 @@
 			<!-- End Booking Forms -->
 		</div>
 		
-		<!-- Flight Status -->
-		<div class="tab-pane clearfix" id="status" aria-hidden="true" style="display: none;">
-			  <div class="secondaryTabsContainer">
-					<ul id="secondaryTab" class="nav nav-tabs nav-justified" role="tablist" >
-						<li class="selected active" role="presentation" ><a style="width:100%" id="tab-flights" href="" role="tab" aria-controls="flights" aria-selected="true">Notable events</a></li>
-					</ul>
-				</div>
-				
-				<div style="height:2px"></div>
-				<div style="border:1px solid pink; text-align:; padding:5px; border-radius:5px">
-					<span style="color:">New CC screening done at Nakuru County Referral Hospital for patient ID 14130-01773	.</span>
-				</div>
-				
-				<div style="height:2px"></div>
-				
-				<div style="border:1px solid pink; text-align:; padding:5px; border-radius:5px">
-					<span style="color:">Patient 14130-01773 has been referred to KNH for Invasive CC Treatment.</span>
-				</div>
-				
-				<div style="height:2px"></div>
-				
-				<div style="border:1px solid pink; text-align:; padding:5px; border-radius:5px">
-					<span style="color:">Today's appointments are 8 patients scheduled for CC Screening.</span>
-				</div>
-				
-				<div style="height:2px"></div>
-				
-				<div style="border:1px solid pink; text-align:; padding:5px; border-radius:5px">
-					<span style="color:">Missed appointment alert: Patient 14130-01789 missed the appointment scheduled on 6th Feb 2019.</span>
-				</div>
-				
-		</div>
-		<!-- Manage -->
-		<div class="tab-pane clearfix" id="manage" aria-hidden="true" style="display: none;">
-			<form role="form" method="post" location="homelet" action="" novalidate="">
-				 <div class="secondaryTabsContainer">
-					<ul id="secondaryTab" class="nav nav-tabs nav-justified" role="tablist" >
-						<li class="selected active" role="presentation" ><a style="width:100%" id="tab-flights" href="" role="tab" aria-controls="flights" aria-selected="true">System Reports</a></li>
-					</ul>
-				</div>
-				<div style="height:4px"></div>
-				<div class="row" >
-					<div class="col-sm-12 form-group form-links text-left">
-						<a style="border-radius:5px; padding:1px 5px; border-top:0px; border-right:0px" id="manageTabViewReservationHotelCar" title="This indicates a link to an external site that may not follow the same accessibility policies." href="" class="btn btn-ghost-purple" data-omniture-tag="home-page:formlet::findrsrvvac">
-							<span class="circular-offset" style="font-size:11px">Patients Enrolled for CC Screening</span>
-						</a>
-					</div>
-					
-					 <div class="col-sm-12 form-group form-links text-left">
-						<a style="border-radius:5px; padding:1px 5px; border-top:0px; border-right:0px" id="manageTabViewReservationHotelCar" title="This indicates a link to an external site that may not follow the same accessibility policies." href="" class="btn btn-ghost-purple" data-omniture-tag="home-page:formlet::findrsrvvac">
-							<span class="circular-offset" style="font-size:11px">Patients Declined Same day CC screening</span>
-						</a>
-					</div>
-					
-					 <div class="col-sm-12 form-group form-links text-left">
-						<a style="border-radius:5px; padding:1px 5px; border-top:0px; border-right:0px" id="manageTabViewReservationHotelCar" title="This indicates a link to an external site that may not follow the same accessibility policies." href="" class="btn btn-ghost-purple" data-omniture-tag="home-page:formlet::findrsrvvac">
-							<span class="circular-offset" style="font-size:11px">Patients Due for CC Screening appointment</span>
-						</a>
-					</div>
-					
-					<div class="col-sm-12 form-group form-links text-left">
-						<a style="border-radius:5px; padding:1px 5px; border-top:0px; border-right:0px" id="manageTabViewReservationHotelCar" title="This indicates a link to an external site that may not follow the same accessibility policies." href="n" class="btn btn-ghost-purple" data-omniture-tag="home-page:formlet::findrsrvvac">
-							<span class="circular-offset" style="font-size:11px">Missed Appointments Report</span>
-						</a>
-					</div>
-					
-					<div class="col-sm-12 form-group form-links text-left">
-						<a style="border-radius:5px; padding:1px 5px; border-top:0px; border-right:0px" id="manageTabViewReservationHotelCar" title="This indicates a link to an external site that may not follow the same accessibility policies." href="" class="btn btn-ghost-purple" data-omniture-tag="home-page:formlet::findrsrvvac">
-							<span class="circular-offset" style="font-size:11px">Patients Started on Pre-Cancer Treatment</span>
-						</a>
-					</div>
-					
-					<div class="col-sm-12 form-group form-links text-left">
-						<a style="border-radius:5px; padding:1px 5px; border-top:0px; border-right:0px" id="manageTabViewReservationHotelCar" title="This indicates a link to an external site that may not follow the same accessibility policies." href="" class="btn btn-ghost-purple" data-omniture-tag="home-page:formlet::findrsrvvac">
-							<span class="circular-offset" style="font-size:11px">Patients Referred for Invasive CC Treatment</span>
-						</a>
-					</div>
-					
-					<div class="col-sm-12 form-group form-links text-left">
-						<a style="border-radius:5px; padding:1px 5px; border-top:0px; border-right:0px" id="manageTabViewReservationHotelCar" title="This indicates a link to an external site that may not follow the same accessibility policies." href="" class="btn btn-ghost-purple" data-omniture-tag="home-page:formlet::findrsrvvac">
-							<span class="circular-offset" style="font-size:11px">Patients Treated for Invasive CC</span>
-						</a>
-					</div>
-				</div>
-			</form>
-		</div>
+		
 		<div style="float: left;">
 			<div id="reissueEligibleContainer" style="display: none;">
 				<div id="reissueEligibleContent" style="display: none;">

@@ -107,7 +107,7 @@
 		  border-radius:5px;
           position: fixed;
           top: 50%;
-          left: 55%;
+          left: 50%;
 		  width: 100px;
           margin: -75px;
           z-index: 510;
@@ -139,13 +139,14 @@
 				$("#loginDiv").css("background-image", "url('images/pages/counsellingxx.jpg')");
 			  
 			}else{
-				
+				$("#loginMobile").css("display", "none");
 				$("#messageSpan").html('Slow network detected.');
 			}
 			
 			if($(window).width() < 769){
 				$("#loginMobile").css("display", "none");
 				$("#desktopBreak").css("display", "none");
+				$("#loginDiv").css("top", "40%");
 			}
 			
 			if($(window).height() > 824){
@@ -154,6 +155,17 @@
 			
 			if($(window).height() < 699){
 				$("#aboutDiv").css("display", "none");
+				//$("#loginDiv").css("top", "60%");
+			}
+			
+			if($(window).height() < 560){
+				
+				$("#loginDiv").css("top", "60%");
+			}
+			
+			if(($(window).height() > 560) && $(window).height() < 800){
+				
+				$("#loginDiv").css("top", "60%");
 			}
 			
 			if(!systemIsOnline){

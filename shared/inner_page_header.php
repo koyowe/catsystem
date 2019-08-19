@@ -47,7 +47,7 @@
 						<ul class="pure-menu-list nav-ul" role="menu">
 						
 							<li class="pure-menu-item pure-menu-selected" role="presentation">
-							<a id="navAlaskaAirHome" href="" class="pure-menu-link no-hover-underline" aria-label="Go to CATSystem Home">
+							<a id="navAlaskaAirHome" href="/../app" class="pure-menu-link no-hover-underline" aria-label="Go to CATSystem Home">
 								
 								 <table align="center">
 									<tr>
@@ -65,10 +65,10 @@
 						
 						</ul>
 					
-						<ul class="pure-menu-list nav-ul" role="menu" style="width:200px;">
+						<ul class="pure-menu-list nav-ul" role="menu" style="width:180px;">
 						
 							<li class="pure-menu-item pure-menu-selected" role="presentation">
-							<a id="" href="../" class="pure-menu-link no-hover-underline" aria-label="Go to CATSystem Home">
+							<a id="" href="/../" class="pure-menu-link no-hover-underline" aria-label="Go to CATSystem Home">
 								
 								 <table align="left">
 									<tr>
@@ -149,7 +149,7 @@
 							</span>
 							<br/>
 							<span style="font-weight:;font-size:14px;">
-								Clinical Officer
+								medical superintendent
 							</span>
 						</td>
 					</tr>

@@ -1,12 +1,12 @@
 	
-	<a class="button button-purple" style="text-decoration:none" onclick="window.location.href = '';">
+	<a class="button button-purple" style="text-decoration:none" onclick="window.location.href = '/app';">
 	  Find Patients
 	</a>
 	<a class="button button-orange" style="text-decoration:none">
 	  <i class="fa fa-exclamation-triangle"></i>
 	  Referrals
 	</a>
-	<a class="button button-purple" style="text-decoration:none">
+	<a class="button button-purple" style="text-decoration:none" onclick="window.location.href = '/app/registration';">
 	  <i class="fa fa-times"></i>
 	  Register a Patient
 	</a>
@@ -26,9 +26,9 @@
 	  <i class="fa fa-globe"></i>
 	 Reports
 	</a>
-	<!--<a class="button button-purple" style="text-decoration:none">
+	<a class="button button-purple" style="text-decoration:none">
 	  <i class="fa fa-check"></i>
 	 System Administration
-	</a>-->
+	</a>
 	
 	<hr style="margin-left:5px">

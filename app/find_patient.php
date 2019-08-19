@@ -5,6 +5,7 @@
 				@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 				body{
+				  //background: url(https://subtlepatterns.com/patterns/scribble_light.png) #FFF;
 				  background: #f2f2f2;
 				  font-family: 'Open Sans', sans-serif;
 				}
@@ -44,9 +45,15 @@
 
 				/*Resize the wrap to see the search bar change!*/
 				.wrap{
-				  width: 100%;
+				  width:%;
+				  padding:10px;
+				  background-color:white;
+				  height:100vh;
 				}
 				
+				#searchResult th, td{
+					border:1px solid pink;
+				}
 				#searchResult th{
 					color:#555;
 					text-align:left;
@@ -57,15 +64,26 @@
 					font-size:14px;
 				}
 				
+				#searchResult tr:nth-child(odd) {background: #fffdf7;}
+				
 				#searchNavigation tr{
 					font-size:12px;
 					color:grey;
+				}
+				
+				#searchNavigation td{
+					border:0px;
 				}
 				
 				#searchResult tr:hover{
 					background: #007fff;
 					cursor: pointer;
 					color: white;
+				}
+				
+				#searchHeader {
+					background: #f2f2f2;
+					border-bottom:1px solid pink;
 				}
 			</style>
 	
@@ -75,21 +93,25 @@
 		</head>
 		
 		<body>
-			<h2 style="font-size: 1.3em; color: #009384;">
-				Find Patient Record
-			</h2>
+			
+			<div id="searchHeader">
+				<h1 style="font-size: 1.4em; color: #00463f;">
+					<span style="font-weight: normal;display: inline-block;">
+						Find Patient Record
+					</span>
+				</h1>
+				<div class="search">
+					<input type="text" class="searchTerm" placeholder="Search by ID or Name">
+					<button type="submit" class="searchButton">
+						<i class="fa fa-search"></i>
+					</button>
+				</div>
+				<br>
+			</div>
+			
 			<div class="wrap">
-			   <div class="search">
-				  <input type="text" class="searchTerm" placeholder="Search by ID or Name">
-				  <button type="submit" class="searchButton">
-					<i class="fa fa-search"></i>
-				 </button>
-			   </div>
-			   
-			   <br>
-			   
 			   <div>
-					<table id="searchResult" width="100%" border="1" cellspacing="0" bordercolor="pink">
+					<table id="searchResult" width="100%" cellspacing="0" style="background:white;border-collapse:collapse;">
 						<tr>
 							<th>
 								Patient ID

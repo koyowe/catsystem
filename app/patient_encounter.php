@@ -6,6 +6,7 @@
 
 				body{
 				  background: #f2f2f2;
+				  //background: url(https://subtlepatterns.com/patterns/scribble_light.png) #FFF;
 				  font-family: 'Open Sans', sans-serif;
 				}
 
@@ -67,6 +68,12 @@
 					cursor: pointer;
 					color: white;
 				}
+				
+				#patientDetails {
+					background: #f2f2f2;
+					border-bottom:1px solid pink;
+				}
+				
 			</style>
 	
 			<script type="text/javascript">
@@ -112,7 +119,7 @@
 					</tr>
 				</table>
 			</div>
-			<hr>
+			
 			<div id="patientWidgets" style="background-color:white; height:100vh">
 				<br>
 				<div style="display: inline;float: left;width: 35.41667%;margin: 0 1.04167%;">
@@ -159,7 +166,23 @@
 							<h4>RECENT VISITS</h4>
 						</div>
 						<div style="background: #F9F9F9;border: 1px solid #eeeeee;padding: 5px;color: #363463;">
-							None
+							<ul style="list-style: none;margin-block-start: 1px;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 4px;">
+								<li style="line-height: 1.1em;border-bottom: 1px solid #eeeeee;margin-bottom: 5px;display: list-item;text-align: -webkit-match-parent;">
+									<a href="" style="color: #007fff;text-decoration: none;cursor: pointer;">
+										July.8.2019
+									</a>
+								</li>
+								<li style="line-height: 1.1em;border-bottom: 1px solid #eeeeee;margin-bottom: 5px;display: list-item;text-align: -webkit-match-parent;">
+									<a href="" style="color: #007fff;text-decoration: none;cursor: pointer;">
+										May.10.2019
+									</a>
+								</li>
+								<li style="line-height: 1.1em;border-bottom: 1px solid #eeeeee;margin-bottom: 5px;display: list-item;text-align: -webkit-match-parent;">
+									<a href="" style="color: #007fff;text-decoration: none;cursor: pointer;">
+										Feb.28.2019
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 					
@@ -181,36 +204,90 @@
 					<div style="margin-top: 30px;background: white;border: 1px solid #dddddd;">
 						<ul style="background: #363463;color: white;padding: 5px;float: left;clear: left;width: 97.91666%;list-style: none;margin: 0;">
 							<h3 style="margin: 0;color: white;border-bottom: 1px solid white;margin-bottom: 5px;font-size:1em;margin-top: 5px;">
-								General Actions
+								Quick Actions
 							</h3>
-							<li style="font-size: 0.9em;float: left;clear: left;width: 97.91666%;margin: 0;    padding: 0;display: list-item;text-align: -webkit-match-parent;color: white;list-style: none;height:30px">
-								<a href="" style="color: white;text-decoration:none"> 
-									<img src="../images/icons/medical-history.png" style="width:15px;float:left">
-									&nbsp;Cancer Screening Form
+							<li style="font-size: 0.8em;float: left;clear: left;width: 97.91666%;margin: 0;    padding: 0;display: list-item;text-align: -webkit-match-parent;color: white;list-style: none;height:auto">
+								<a style="color: white;text-decoration:none;cursor:pointer" onClick="window.location.href='cervical_cancer_screening_form.php';"> 
+									<table>
+										<tr>
+											<td style="width:1%;vertical-align:top">
+												<img src="../images/icons/medical-history.png" style="width:20px;float:left">
+											</td>
+											<td style="vertical-align:top">
+												Cervical Cancer Screening Form
+											</td>
+										</tr>
+									</table>
 								</a>
 							</li>
-							<li style="font-size: 0.9em;float: left;clear: left;width: 97.91666%;margin: 0;    padding: 0;display: list-item;text-align: -webkit-match-parent;color: white;list-style: none;height:30px">
+							<li style="font-size: 0.8em;float: left;clear: left;width: 97.91666%;margin: 0;    padding: 0;display: list-item;text-align: -webkit-match-parent;color: white;list-style: none;height:auto">
 								<a href="" style="color: white;text-decoration:none"> 
-									<img src="../images/icons/medical-book.png" style="width:15px;float:left">
-									&nbsp;Schedule Appointment
+									<table>
+										<tr>
+											<td style="width:1%;vertical-align:top">
+												<img src="../images/icons/appointment.png" style="width:20px;float:left">
+											</td>
+											<td style="vertical-align:top">
+												Schedule Appointment
+											</td>
+										</tr>
+									</table>
 								</a>
 							</li>
-							<li style="font-size: 0.9em;float: left;clear: left;width: 97.91666%;margin: 0;    padding: 0;display: list-item;text-align: -webkit-match-parent;color: white;list-style: none;height:30px">
+							<li style="font-size: 0.8em;float: left;clear: left;width: 97.91666%;margin: 0;    padding: 0;display: list-item;text-align: -webkit-match-parent;color: white;list-style: none;height:auto">
 								<a href="" style="color: white;text-decoration:none"> 
-									<img src="../images/icons/hospital_cross.png" style="width:15px;float:left">
-									&nbsp;Mark Patient Deceased
+									<table>
+										<tr>
+											<td style="width:1%;vertical-align:top">
+												<img src="../images/icons/send.png" style="width:20px;float:left">
+											</td>
+											<td style="vertical-align:top">
+												Send Text Message
+											</td>
+										</tr>
+									</table>
 								</a>
 							</li>
-							<li style="font-size: 0.9em;float: left;clear: left;width: 97.91666%;margin: 0;    padding: 0;display: list-item;text-align: -webkit-match-parent;color: white;list-style: none;height:30px">
+							<li style="font-size: 0.8em;float: left;clear: left;width: 97.91666%;margin: 0;    padding: 0;display: list-item;text-align: -webkit-match-parent;color: white;list-style: none;height:auto">
 								<a href="" style="color: white;text-decoration:none"> 
-									<img src="../images/icons/x-mark.png" style="width:15px;float:left">
-									&nbsp;Delete Patient
+									<table>
+										<tr>
+											<td style="width:1%;vertical-align:top">
+												<img src="../images/icons/obituary.png" style="width:20px;float:left">
+											</td>
+											<td style="vertical-align:top">
+												Mark Patient Deceased
+											</td>
+										</tr>
+									</table>
 								</a>
 							</li>
-							<li style="font-size: 0.9em;float: left;clear: left;width: 97.91666%;margin: 0;    padding: 0;display: list-item;text-align: -webkit-match-parent;color: white;list-style: none;height:30px">
+							<li style="font-size: 0.8em;float: left;clear: left;width: 97.91666%;margin: 0;    padding: 0;display: list-item;text-align: -webkit-match-parent;color: white;list-style: none;height:auto">
 								<a href="" style="color: white;text-decoration:none"> 
-									<img src="../images/icons/paperclip.png" style="width:15px;float:left">
-									&nbsp;Attachments
+									<table>
+										<tr>
+											<td style="width:1%;vertical-align:top">
+												<img src="../images/icons/delete.png" style="width:20px;float:left">
+											</td>
+											<td style="vertical-align:top">
+												Delete Patient
+											</td>
+										</tr>
+									</table>
+								</a>
+							</li>
+							<li style="font-size: 0.8em;float: left;clear: left;width: 97.91666%;margin: 0;    padding: 0;display: list-item;text-align: -webkit-match-parent;color: white;list-style: none;height:auto">
+								<a href="" style="color: white;text-decoration:none"> 
+									<table>
+										<tr>
+											<td style="width:1%;vertical-align:top">
+												<img src="../images/icons/paperclip.png" style="width:20px;float:left">
+											</td>
+											<td style="vertical-align:top">
+												Attachments
+											</td>
+										</tr>
+									</table>
 								</a>
 							</li>
 						</ul>

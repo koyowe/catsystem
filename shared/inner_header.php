@@ -75,7 +75,7 @@
 			background-color:pink; border-radius:50%;
           position: fixed;
           top: 50%;
-          left: 55%;
+          left: 50%;
 		  width: 100px;
           margin: -75px;
           z-index: 510;
