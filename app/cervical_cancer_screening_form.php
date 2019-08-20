@@ -139,6 +139,10 @@
 		
 		<body>
 			<div id="patientDetails">
+				<a onClick="history.back(-1);" style="cursor:pointer">
+					<img src="/../app/images/icons/keyboard-left-arrow-button.png" style="width:10px;">
+					<u>Back</u>
+				</a>
 				<table width="100%">
 					<tr>
 						<td style="width:1%;  white-space:nowrap;">

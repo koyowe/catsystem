@@ -12,7 +12,7 @@
 			 <div class="secondaryTabpanelContainer">
 				<div class="secondaryTabsContainer">
 					<ul id="secondaryTab" class="nav nav-tabs nav-justified" role="tablist" >
-						<li class="selected active" role="presentation" ><a style="width:100%" id="tab-flights" href="" role="tab" aria-controls="flights" aria-selected="true">2018/2019 trends</a></li>
+						<li class="selected active" role="presentation" ><a style="width:100%" id="tab-flights" href="" role="tab" aria-controls="flights" aria-selected="true">2019 Screenings</a></li>
 					</ul>
 				</div>
 			</div>
@@ -37,11 +37,11 @@
 								values: [
 									
 									{
-										"label" : "Oct" ,
+										"label" : "Jan" ,
 										"value" : 6
 									},
 									{
-										"label" : "Nov" ,
+										"label" : "Feb" ,
 										"value" : 10
 									},
 									{
@@ -49,15 +49,15 @@
 										"value" : 11
 									},
 									{
-										"label" : "Dec" ,
+										"label" : "Apr" ,
 										"value" : 19
 									},
 									{
-										"label" : "Jan" ,
+										"label" : "May" ,
 										"value" : 21
 									},
 									{
-										"label" : "Feb" ,
+										"label" : "June" ,
 										"value" : 10
 									}
 								]

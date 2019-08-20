@@ -130,7 +130,7 @@
 							</th>
 						</tr>
 						
-						<tr onclick="window.location.href = 'patient_encounter.php';">
+						<tr onclick="window.location.href = 'patient_dashboard.php';">
 							<td>
 								15288-2019-01-001
 							</td>
