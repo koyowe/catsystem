@@ -18,7 +18,7 @@
 		  </div>  
 		</div>
 		<div class="signup">
-		  Don't have an account? <a href="#">Signup</a>
+		  Don't have an account? <a href="#">Request Account</a>
 		</div>    
 	  </div>
 	</div>

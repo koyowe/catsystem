@@ -14,21 +14,57 @@
 	
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	
-	<script type="text/javascript" src="../js/adrum.js.download"></script>
-	<script type="text/javascript" src="../js/adrum-4.3.7.1.js.download"></script>
-	<script type="text/javascript" src="../js/handlebars-v4.0.2.js.download"></script>
+	<style>
+		 #loading-bg {
+          width: 100%;
+          height: 100vh;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.4);
+          z-index: 500;
+        }
+        
+        #loading-image {
+			background-color:pink; border-radius:50%;
+          position: fixed;
+          top: 50%;
+          left: 51.5%;
+		  width: 100px;
+          margin: -75px;
+          z-index: 510;
+        }
+	</style>
+	
 	<script type="text/javascript" src="../js/jquery.min.js.download"></script>
 	<script type="text/javascript" src="../js/jquery-ui.min.js.download"></script>
-	<script src="../js/intent_media_data.js.download"></script>
-	<script src="../js/numscroller-1.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js" charset="utf-8"></script>
-	<script src="../js/nvd3/build/nv.d3.js"></script>
+	
+	<script type="text/javascript">
+		$(window).on('load', function() {
+			$('#loading-bg').hide();
+			$('#loading-image').hide();
+		});
+
+		$(window).on('beforeunload', function() {
+			$('#loading-bg').show();
+			$('#loading-image').show();
+		});
+	</script>
 	
 	<link rel="stylesheet" href="../css/header.css">
 	<link rel="stylesheet" href="../css/core.css">
 	<link rel="stylesheet" href="../css/sitecore.css">
 	<link rel="shortcut icon" href="../images/pages/cc-icon_2.png">
 	<link href="../js/nvd3/build/nv.d3.css" rel="stylesheet" type="text/css">
+	
+	<script type="text/javascript" src="../js/adrum.js.download"></script>
+	<script type="text/javascript" src="../js/adrum-4.3.7.1.js.download"></script>
+	<script type="text/javascript" src="../js/handlebars-v4.0.2.js.download"></script>
+	
+	<script src="../js/intent_media_data.js.download"></script>
+	<script src="../js/numscroller-1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+	<script src="../js/nvd3/build/nv.d3.js"></script>
 	
 	<style id="holderjs-style" type="text/css"></style>
 	<style type="text/css">
@@ -61,25 +97,6 @@
 	.st-install-pAcC2eE7jjZxvyeUDsqJ .st-ui-result em {font-style:normal; font-weight:bold; background-color:#f6fcfe !important}</style>
 	
 	<style>
-		 #loading-bg {
-          width: 100%;
-          height: 100vh;
-          position: absolute;
-          top: 0;
-          left: 0;
-          background-color: rgba(0, 0, 0, 0.4);
-          z-index: 500;
-        }
-        
-        #loading-image {
-			background-color:pink; border-radius:50%;
-          position: fixed;
-          top: 50%;
-          left: 50%;
-		  width: 100px;
-          margin: -75px;
-          z-index: 510;
-        }
 		
 		@media (min-width: 769px) {
 			#homeMobile {
@@ -101,15 +118,11 @@
 		}
 	</style>
 	<script type="text/javascript">
-		$(function() {
-		  $('#loading-bg').hide();
-		  $('#loading-image').hide();
-
-		  $(window).on('beforeunload', function() {
-			$('#loading-bg').show();
-			$('#loading-image').show();
-		  });
-		});
+		
+		 
+		  
+		 
+		
 		
 		$(document).ready(function() {
 				if($(window).width() < 769){

@@ -5,7 +5,7 @@
 		<li role="presentation"><a href="" id="tab-check-in" role="tab" aria-controls="checkin" tabindex="-1" aria-selected="false" onclick="/*window.scrollTo(0, 50); setTimeout(function(){window.scrollTo(0, 1000);}, 500)*/"><span >Summary</span></a></li>
 	</ul>
 	<!-- Tab panes -->
-	<div class="tab-content" style="width:100%">
+	<div class="tab-content" style="width:100%;">
 		<!-- checkin-->
 		
 		<div class="tab-pane clearfix" id="booking" aria-hidden="" style="display:block;" >
@@ -17,10 +17,10 @@
 				</div>
 			</div>
 			
-		   <div class="">
+		   <div  style="height:302px">
 				<br/>
 				
-					<div id="chart2019" style="width:100%;height:100%">
+					<div id="chart2019" style="width:100%;height:60%">
 						<svg id="chart1"></svg>
 					</div>
 					
@@ -38,27 +38,35 @@
 									
 									{
 										"label" : "Jan" ,
-										"value" : 6
-									},
-									{
-										"label" : "Feb" ,
 										"value" : 10
 									},
 									{
+										"label" : "Feb" ,
+										"value" : 15
+									},
+									{
 										"label" : "Mar" ,
-										"value" : 11
+										"value" : 18
 									},
 									{
 										"label" : "Apr" ,
-										"value" : 19
+										"value" : 26
 									},
 									{
 										"label" : "May" ,
-										"value" : 21
+										"value" : 31
 									},
 									{
 										"label" : "June" ,
 										"value" : 10
+									},
+									{
+										"label" : "July" ,
+										"value" : 10
+									},
+									{
+										"label" : "Aug" ,
+										"value" : 6
 									}
 								]
 							}
@@ -189,13 +197,3 @@
 	</div>
 	<!-- End Tab panes -->
 	
-	<script type="text/javascript">
-		var event
-		if (typeof Event === 'function') {
-		  event = new Event('resize')
-		} else {
-		  event = document.createEvent('Event')
-		  event.initEvent('resize', true, true)
-		}
-		window.dispatchEvent(event)
-	</script>

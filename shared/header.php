@@ -107,7 +107,7 @@
 		  border-radius:5px;
           position: fixed;
           top: 50%;
-          left: 50%;
+          left: 51.5%;
 		  width: 100px;
           margin: -75px;
           z-index: 510;

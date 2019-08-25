@@ -9,16 +9,16 @@
 			<table width="100%" align="center">
 				<tr>
 					<td style="text-align:center;width:33%">
-						<img src="../images/pages/ghi_logo.png" width="70px">
+						<!--<img src="../images/pages/ghi_logo.png" width="70px">-->
 					</td>
 					<td style="text-align:center;width:33%">
-						<img src="../images/pages/kumc_logo.png" width="100px">
+						<!--<img src="../images/pages/kumc_logo.png" width="100px">-->
 					</td>
 					<td style="text-align:center;width:33%">
-						<img src="../images/pages/kemri_logo.png" width="35px">
+						<!--<img src="../images/pages/kemri_logo.png" width="35px">-->
 					</td>
 				</tr>
 			</table>
 		</div>
-		<span style="color:#002D56; font-weight:700!important;font-family: "Gotham A", "Gotham B",'Raleway', sans-serif !important; font-weight:400px"><h5>University of Kansas Medical Center</h5></span>
+		<span style="color:#002D56; font-weight:700!important;font-family: "Gotham A", "Gotham B",'Raleway', sans-serif !important; font-weight:400px"><h5></h5></span>
 	</div>

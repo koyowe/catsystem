@@ -47,7 +47,7 @@
 						<ul class="pure-menu-list nav-ul" role="menu">
 						
 							<li class="pure-menu-item pure-menu-selected" role="presentation">
-							<a id="navAlaskaAirHome" href="/../app" class="pure-menu-link no-hover-underline" aria-label="Go to CATSystem Home">
+							<a class="pure-menu-link no-hover-underline" aria-label="Go to CATSystem Home">
 								
 								 <table align="center">
 									<tr>
