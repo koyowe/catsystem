@@ -68,7 +68,7 @@
 						<ul class="pure-menu-list nav-ul" role="menu" style="width:180px;">
 						
 							<li class="pure-menu-item pure-menu-selected" role="presentation">
-							<a id="" href="/../" class="pure-menu-link no-hover-underline" aria-label="Go to CATSystem Home">
+							<a href="login.php?logout=true" style="cursor:pointer" class="pure-menu-link no-hover-underline" aria-label="Go to CATSystem Home">
 								
 								 <table align="left">
 									<tr>
