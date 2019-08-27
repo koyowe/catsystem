@@ -1,16 +1,45 @@
 <?php
 	$formStatus = "To:";
+	$treatmentType = 0;
+	$treatmentReason = "";
+	$refferedTo=0;
+	$refferedFrom=0;
+	$referralReason = 0;
+	$nextAppointment = "";
+	$provider = 0;
+	
 	if(isset($_GET['status'])){
 		if($_GET['status']=='to'){
 			$formStatus = $_GET['status'];
+			$treatmentType = 3;
+			$treatmentReason = "";
+			$refferedTo=1;
+			$refferedFrom=0;
+			$referralReason = 3;
+			$nextAppointment = "2019-09-03";
+			$provider = 2;
 		}
 		
 		if($_GET['status']=='ti'){
 			$formStatus = $_GET['status'];
+			$treatmentType = 2;
+			$treatmentReason = "Site does not have cryotherapy machine";
+			$refferedTo=0;
+			$refferedFrom=3;
+			$referralReason = 1;
+			$nextAppointment = "2019-07-15";
+			$provider = 1;
 		}
 		
 		if($_GET['status']=='new'){
 			$formStatus = $_GET['status'];
+			$treatmentType = 0;
+			$treatmentReason = "";
+			$refferedTo=0;
+			$refferedFrom=0;
+			$referralReason = 0;
+			$nextAppointment = "";
+			$provider = 0;
 		}
 	}
 ?>
@@ -72,6 +101,11 @@
 					border:1px solid #ffc0cb;
 				}
 				
+				#searchResult td{
+					border-bottom:1px solid #eae0c8;
+					 vertical-align: middle;
+				}
+				
 				#formHeader th, td{
 					border:0px;
 				}
@@ -103,20 +137,25 @@
 					border-bottom:1px solid #ffc0cb;
 				}
 				
+				/*
 				.checkInput {
 					transform: scale(2.5);
 					-ms-transform: scale(2.5);
 					-webkit-transform: scale(2.5);
 					padding: 10px;
+				}*/
+				
+				.checkInput {
+					height:25px;
+					width:25px;
 				}
 				
 				.textInput {
 					height:20px;
 					padding: 10px;
-					font-size:17px;
+					font-size:14px;
 					color: #666666;
 					width:20%;
-					font-weight:bold;
 				}
 				
 				.selectInput {
@@ -358,17 +397,19 @@
 							</span>
 						</td>
 						<td style="width:1%;  white-space:nowrap;">
-							<h1 style="font-size: 1.5em; color: #00463f;">
+							<h1 style="font-size: 1.2em; color: #00463f;">
 								<span style="font-weight: bold;display: inline-block;">
 									<?php
 										if($formStatus == 'to'){
 											echo 'To:';
-										} elseif ($formStatus == 'ti'){
+										}
+										
+										if ($formStatus == 'ti'){
 											echo 'From:';
-										} elseif ($formStatus == 'new'){
+										}
+										
+										if ($formStatus == 'new'){
 											echo '';
-										} else {
-											echo $formStatus;
 										}
 									?>
 								</span>
@@ -381,12 +422,14 @@
 									<?php
 										if($formStatus == 'to'){
 											echo 'Kenyatta National Hospital';
-										} elseif ($formStatus == 'ti'){
+										}
+										
+										if ($formStatus == 'ti'){
 											echo 'Kapsabet Sub County Hospital';
-										} elseif ($formStatus == 'new'){
+										}
+										
+										if ($formStatus == 'new'){
 											echo 'New Treatment and Referral';
-										} else {
-											echo 'Kenyatta National Hospital';
 										}
 									?>
 								</span>
@@ -432,38 +475,53 @@
 						
 						<tr>
 							<th colspan="2" style="text-align:center;background:#666666;color:white">
-								<h2>Cervical Cancer Treatment and Referral Form</h2>
+								<h3>Cervical Cancer Treatment and Referral Form</h3>
 							</th>
 						</tr>
-						
+						<!--
+						$treatmentType = 0;
+						$treatmentReason = "";
+						$refferedTo=0;
+						$refferedFrom=0;
+						$referralReason = 0;
+						$nextAppointment = "";
+						$provider = 0;
+						-->
 						<tr>
-							<th rowspan="5" style="width:25%;text-align:center">
+							<th rowspan="5" style="width:1%;text-align:center">
 								<h3>Treatment</h3>
 							</th>
 							<td>
-								<input class="checkInput" type="checkbox" name=""/> <label for="" class="inputLabel">Screening today, Cryotherapy performed today (Single Visit Approach - SVA)</label>
+								<input class="checkInput" type="checkbox" name="" <?php if($treatmentType==1){ echo 'checked=true';} ?>/> <label for="" class="inputLabel">Screening today, Cryotherapy performed today (Single Visit Approach - SVA)</label>
 							</td>
 						</tr>
 						
 						<tr>
 							<td>
-								<input class="checkInput" type="checkbox" name=""/> <label for="" class="inputLabel">Screening today, Cryotherapy postponed.</label>
-								<label for="" class="inputLabel">Reason</label><input class="textInput" type="text" name="">
+								<input class="checkInput" type="checkbox" name="" <?php if($treatmentType==2){ echo 'checked=true';} ?>/> <label for="" class="inputLabel">Screening today, Cryotherapy postponed</label>
+								<br>
+								<label for="" class="inputLabel">Reason:</label>
+								<input class="textInput" type="text" name="" value="<?php echo $treatmentReason; ?>" style="width:90%">
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<input class="checkInput" type="checkbox" name=""/> <label for="" class="inputLabel">Postponed Cryotherapy done today</label>
+								<input class="checkInput" type="checkbox" name="" <?php if($treatmentType==3){ echo 'checked=true';} ?>/> <label for="" class="inputLabel">Postponed Cryotherapy done today</label>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<input class="checkInput" type="checkbox" name=""/> <label for="" class="inputLabel">Other Cervical cancer specific treatment performed today (e.g LEEP):</label> <input class="textInput" type="text" name="">
+								<input class="checkInput" type="checkbox" name=""/> <label for="" class="inputLabel">Other Cervical cancer specific treatment performed today (e.g LEEP):</label> 
+								<br>
+								<input class="textInput" type="text" name="" style="width:90%">
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<input class="checkInput" type="checkbox" name=""/> <label for="" class="inputLabel">Treatment for other ailments (specify):</label> <input class="textInput" type="text" name="">
+								<input class="checkInput" type="checkbox" name=""/> <label for="" class="inputLabel">Treatment for other ailments</label> 
+								<br>
+								 (specify):
+								<input class="textInput" type="text" name="" style="width:90%">
 							</td>
 						</tr>
 						
@@ -475,36 +533,49 @@
 						
 						<tr>
 							<th rowspan="5" style="width:25%;text-align:center">
-								<h3>Referral Out</h3>
+								<h3>Referral</h3>
 							</th>
-							<td>
-								<label for="" class="inputLabel">Reffered To:</label> 
-								<select class="selectInput">
-									<option value="">Select</option>
-									<option value="">Kenyatta National Hospital</option>
-									<option value="">Moi Teaching and Referral Hospital</option>
+							<td style="border-bottom:1px solid pink">
+								<label for="" class="inputLabel" style="font-size:12px">Reffered To:</label> 
+								<select class="selectInput" <?php if($refferedFrom>0){ echo 'disabled';}?>>
+									<option value="0">Select</option>
+									<option value="1" <?php if($refferedTo==1){ echo 'selected';}?>>Kenyatta National Hospital</option>
+									<option value="2" <?php if($refferedTo==2){ echo 'selected';}?>>Moi Teaching and Referral Hospital</option>
+									<option value="2" <?php if($refferedTo==3){ echo 'selected';}?>>Kapsabet Sub County Hospital</option>
 								</select>
+								<label for="" class="inputLabel" style="font-size:12px">Reffered From:</label> 
+								<select class="selectInput" <?php if($refferedTo>0){ echo 'disabled';}?>>
+									<option value="0">Select</option>
+									<option value="1" <?php if($refferedFrom==1){ echo 'selected';}?>>Kenyatta National Hospital</option>
+									<option value="2" <?php if($refferedFrom==2){ echo 'selected';}?>>Moi Teaching and Referral Hospital</option>
+									<option value="2" <?php if($refferedFrom==3){ echo 'selected';}?>>Kapsabet Sub County Hospital</option>
+								</select>
+								<br>
 								<label for="" class="inputLabel">Reasons: (Tick Below)</label> 
 							</td>
 						</tr>
 						
 						<tr>
 							<td>
-								<input class="checkInput" type="checkbox" name=""/> <label for="" class="inputLabel">Site does not have cryotherapy machine</label>
+								<input class="checkInput" type="checkbox" name="" <?php if($referralReason==1){ echo 'checked=true'; } ?>/> <label for="" class="inputLabel">Site does not have cryotherapy machine</label>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<input class="checkInput" type="checkbox" name=""/> <label for="" class="inputLabel">Large lesion.</label>
+								<input class="checkInput" type="checkbox" name="" <?php if($referralReason==2){ echo 'checked=true'; } ?>/> <label for="" class="inputLabel">Large lesion </label>
+								<br>
 								<label for="" class="inputLabel">Result of Large Lesion Referral:</label>
 								<input class="checkInput" type="checkbox" name=""/> <label for="" class="inputLabel">LEEP Performed</label>
-								<label for="" class="inputLabel">Other</label><input class="textInput" type="text" name="" style="width:10%">
+								<br>
+								<label for="" class="inputLabel">Other</label>
+								<input class="textInput" type="text" name="" style="width:90%">
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<input class="checkInput" type="checkbox" name=""/> <label for="" class="inputLabel">Suspect Cancer.</label>
+								<input class="checkInput" type="checkbox" name="" <?php if($referralReason==3){ echo 'checked=true'; } ?>/> <label for="" class="inputLabel">Suspect Cancer.</label>
 								<label for="" class="inputLabel">Result of Suspect Cancer Referral:</label>
+								<br>
 								<input class="checkInput" type="checkbox" name=""/> <label for="" class="inputLabel">Cancer Confirmed</label>
 								<input class="checkInput" type="checkbox" name=""/> <label for="" class="inputLabel">Cancer  not Confirmed</label>
 							</td>
@@ -512,8 +583,9 @@
 						<tr>
 							<td>
 								<input class="checkInput" type="checkbox" name=""/> <label for="" class="inputLabel">Gynaecological problem</label>
+								<br>
 								<label for="" class="inputLabel">(specify):</label>
-								<input class="textInput" type="text" name=""/> 
+								<input class="textInput" type="text" name="" style="width:90%"/> 
 							</td>
 						</tr>
 						
@@ -528,7 +600,7 @@
 								<h3>Next Appointment</h3>
 							</th>
 							<td>
-								<input class="textInput" type="date" name=""/> 
+								<input class="textInput" type="date" name="" value="<?php echo $nextAppointment;?>"/> 
 							</td>
 						</tr>
 						
@@ -545,9 +617,9 @@
 							<td>
 								<label for="" class="inputLabel">Provider's Name:</label> 
 								<select class="selectInput">
-									<option value="">Select</option>
-									<option value="">Kevin Oyowe</option>
-									<option value="">Clifford Njoroge</option>
+									<option value="0">Select</option>
+									<option value="1" <?php if($provider==1){ echo 'selected="selected"'; } ?>>Kevin Oyowe</option>
+									<option value="2" <?php if($provider==2){ echo 'selected="selected"'; } ?>>Clifford Njoroge</option>
 								</select>
 							</td>
 						</tr>
@@ -560,10 +632,10 @@
 						
 						<tr >
 							<th rowspan="1" style="width:25%;text-align:center">
-								<h3></h3>
+								<h3>Submit</h3>
 							</th>
 							<td style="text-align:">
-								<a class="button button-purple" style="text-decoration:none;width:200px;text-align:center">
+								<a class="button <?php if(($formStatus=='to')||($formStatus=='ti')){ echo ''; } else { echo 'button-purple'; } ?>" style="text-decoration:none;width:200px;text-align:center">
 								  <i class="fa fa-check"></i>
 									Submit Form
 								</a>

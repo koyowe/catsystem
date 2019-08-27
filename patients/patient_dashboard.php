@@ -413,12 +413,11 @@
 						<div style="background: #F9F9F9;border: 1px solid #eeeeee;padding: 5px;color: #363463;">
 							<div style="cursor: pointer;position: relative;height: 110px;">
 								<img src="../images/icons/safety.png" style="height:90px;float:left">
-								<figcaption style="margin-left:10px;float:left;font-size:11px; width:100px">You will need special clearence to access this information</figcaption>
+								<figcaption style="margin-left:10px;float:left;font-size:11px; width:100px">Permission is required to access this information</figcaption>
 								<a href="" class="button " style="text-decoration:none">
 								  View attachments
 								</a>
-								<br/>
-								<a style="margin-left:20px" href="">Request Access</a>
+								
 							</div>
 						</div>
 					</div>

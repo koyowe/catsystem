@@ -256,6 +256,14 @@
 					//cursor:pointer;
 					background: #eee;
 					color: #666;
+					border-bottom: 1px solid white;
+					padding: 10px 10px 0px 10px;
+					min-height: 55px;
+					width: 180px;
+					padding-bottom: 5px;
+					position: relative;    
+					display: list-item;
+					text-align: -webkit-match-parent;
 				}
 				#encounterList li:hover {
 					cursor:pointer;
@@ -275,10 +283,7 @@
 				<table width="100%" style="border-collapse:collapse;">
 					<tr>
 						<td style="width:10%;border-right:3px solid pink;">
-							<a onClick="history.back(-1);" style="cursor:pointer">
-								<img src="../images/icons/keyboard-left-arrow-button.png" style="width:10px;">
-								<u>Back</u>
-							</a>
+							
 						</td>
 						<td style="width:;border-bottom:1px solid pink;background-color:#363463;color:pink">
 							Referral Encounters
@@ -289,57 +294,33 @@
 					<tr>
 						<td style="width:1%;  white-space:nowrap;">
 							<h1 style="font-size: 1.5em; color: #00463f;">
-								<span style="font-weight: normal;display: inline-block;">
-									Ebby
-								</span>
-								
-								<span style="font-weight: normal;">
-									
-								</span>
-								
-								<span style="font-weight: normal;">
-									Zedeki
+								<span style="font-weight: normal;display: inline-block;color:green">
+									Treatment and Referral
 								</span>
 							</h1>
-						</td>
-						<td style="font-size: 14px;">
-							&nbsp;
-							<span>Female&nbsp;</span>
-							<span>
-								29 year(s) 
-							   (15.Feb.1990)          
-							</span>
-						</td>
-						<td style="text-align:right">
-							<em style="color: #888;font-size: 0.9em;border-bottom: 1px solid #DDD;">
-								Patient ID
-							</em>
-							<span style="background: #666666;color: white;letter-spacing: 1px;margin: 2px;padding: 2px 8px;font-size: 0.8em;border-radius: 50px;">
-								15288-2019-01-002
-							</span>
 						</td>
 					</tr>
 				</table>
 			</div>
 			
 			<div id="patientWidgets" style="background-color:white;padding-right:10px">
-				<br><br>
+				<br>
 				<table>
 				<tr>
 				<td style="width:1%;vertical-align:top">
 				<div id="encounterMenu" style="border: 1px solid #dddddd;border-top: ;">
 					<ul id="encounterList" style="display: inline-block;border: 1px solid #cccccc;border-left: none;list-style: none;margin-block-start: 0em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 0px;">
-						<li onClick="menuRefferalTo()" style="background: white;color: #363463;border-bottom: 1px solid white;padding: 10px 10px 0px 10px;min-height: 55px;width: 180px;padding-bottom: 5px;position: relative;display: list-item;text-align: -webkit-match-parent;">
-							<span style="border-bottom: 1px dotted #888888;display: block;font-size: 0.75em;padding-bottom: 7px;color: #363463;">
+						<li onClick="menuRefferalTo()">
+							<span style="border-bottom: 1px dotted #888888;display: block;font-size: 0.75em;padding-bottom: 7px;">
 								<img src="../images/icons/twenty-to-ten.png" style="width:10px">
 								July.15.2019 <span style="font-weight:bold">[Referral Out]</span>
 							</span>
-							<span style="line-height: 1.3em;display: block;font-size: 0.95em;padding-top: 7px;color: #363463;list-style: none;">
+							<span style="line-height: 1.3em;display: block;font-size: 0.95em;padding-top: 7px;list-style: none;">
 								Cervical Canncer Treatment and Referral
 							</span>
 						</li>
 						
-						<li onClick="menuRefferalFrom()" style="border-bottom: 1px solid white;padding: 10px 10px 0px 10px;min-height: 55px;width: 180px;padding-bottom: 5px;position: relative;    display: list-item;text-align: -webkit-match-parent;">
+						<li onClick="menuRefferalFrom()" >
 							<span style="display: block;font-size: 0.75em;border-bottom: 1px dotted #cccccc;padding-bottom: 7px;">
 								<img src="../images/icons/twenty-to-ten.png" style="width:10px">
 								July.12.2019 <span style="font-weight:bold">[Referral In]</span>

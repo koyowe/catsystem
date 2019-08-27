@@ -189,7 +189,7 @@
 
 				.searchTerm {
 				  width: 100%;
-				  border: 3px solid rgba(245, 124, 32, 1);
+				  border: 3px solid  #eae0c8;
 				  border-right: none;
 				  padding: 5px;
 				  height: 20px;
@@ -205,8 +205,9 @@
 				.searchButton {
 				  width: 40px;
 				  height: 36px;
-				  border: 1px solid rgba(245, 124, 32, 1);
-				  background: rgba(245, 124, 32, 1);
+				  border: 1px solid  #eae0c8;
+				  //background: rgba(245, 124, 32, 1);
+				  background: #eae0c8;
 				  text-align: center;
 				  color: #fff;
 				  border-radius: 0 5px 5px 0;
@@ -305,7 +306,7 @@
 		<body>
 			<div id="searchHeader">
 				<h1 style="font-size: 1.4em; color: #00463f;">
-					<span style="font-weight: normal;display: inline-block;">
+					<span style="font-weight: normal;display: inline-block;color:green">
 						Treatment and Referral
 					</span>
 				</h1>
